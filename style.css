@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'poppins',sans-serif;
+ }
+
+li {
+  list-style-type: none; /* no underline or bullet points */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto; /* place everything in middle */
+  padding: 0 8px;
+}
+
+/* TOP BAR */
+.top-bar {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns, all are equal (use repeat 3 with 1 fraction) */
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.top-bar .intro {
+  grid-column: 2; /* place h1 tag into grid */
+  justify-self: center;
+}
+
+.top-bar p {
+  justify-self: end; /* moves paragraph tag (p) to the end (right) */
+}
+
+/* TOP BAR END */
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  min-height: 80px;
+  border-bottom: 1px solid #eeeeee;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* same as top bar setting, just a different way or typing. Also 3 columns. I can also make the middle colum use 50% of the page like this (1fr 2fr 1fr) */
+  align-items: center;
+}
+
+.navbar h1 {
+  color: #ff385c;
+
+}
+
+.search {
+  justify-self: centre;
+  width: 100%;
+
+}
+
+.search form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;  /* https://getcssscan.com/css-box-shadow-examples */
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.search input:focus {
+  outline: none; /* removes blue bar when selecting the search bar */
+}
+
+.search i {
+  font-size: 1rem;
+  color: #ff385c; /* color of magnifying glass */
+}
+
+.search button {
+  border: none; /* removes greyish background of magnifying glass */
+  background-color: transparent;
+}
+
+.menu {
+  justify-self: end; /* move Li to the end (right) */
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li {
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+
+.mobile {
+  cursor: pointer;
+  display: none; /* remove the little menu bars icon. So in media query it will show up */
+}
+
+/* NAVBAR END */
+
+
+@media screen and (max-width:940px) {
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    grid-template-columns: repeat(2, 1fr); /* reduce it down to 2 columns */
+    border-bottom: none;
+  }
+
+  .navbar .search {
+    width: 100%;
+    padding: 10px 0;
+    order: 3; /* reorders this in the layout. Moves it from the 2nd column to the 3rd */
+  }
+
+}
