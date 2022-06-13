@@ -121,6 +121,28 @@ a {
 
 /* NAVBAR END */
 
+/* Sort Bar  */
+.sort-bar {
+  display: flex; /* changes from column to row of icons */
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: #5e5e5e;
+}
+
+.sort-bar div {
+  text-align: center;
+}
+
+.sort-bar i {
+  font-size: 1.2rem
+}
+
+.sort-bar p {
+  font-size: 12px;
+}
+
+/* EndSort Bar  */
+
 
 @media screen and (max-width:940px) {
   .top-bar {
@@ -138,6 +160,43 @@ a {
     width: 100%;
     padding: 10px 0;
     order: 3; /* reorders this in the layout. Moves it from the 2nd column to the 3rd */
+    grid-column: span 2; /*  sits search bar in the middle */
   }
 
+  .search form {
+    max-width: 100%; /* display full length on mobile device */
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%; /* move off screen while inactive */
+    background-color: #fff;
+    flex-direction: column;
+    top: 80px;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.3s;
+    padding-top: 1rem;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+  /* Top Bar */
+  .top-bar .intro, p {
+    font-size: .8rem;
+  }
 }
