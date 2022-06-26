@@ -20,6 +20,14 @@ a {
   color: #333;
 }
 
+html { /* important little adjustment, especially with chevron up arrow */
+  scroll-behavior: smooth;
+}
+
+.grey {
+  color: #6d6d6d;
+}
+
 .container {
   max-width: 1240px;
   margin: auto; /* place everything in middle */
@@ -143,6 +151,117 @@ a {
 
 /* EndSort Bar  */
 
+/* Listings */
+
+.listings {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+}
+
+.listings .card {
+  max-width: 300px;
+  width: 100%;
+  font-size: .9rem;
+}
+
+.listings .card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listings img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* maintains the aspect ratio of the image (if the img is tall, wide etc */
+  
+}
+ .listings p {
+  padding-bottom: 4px;
+ }
+ 
+img {
+  border-radius: 15px;
+}
+
+/* Listings Ending */
+
+/* Featured */
+
+.featured {
+  width: 100%;
+  padding: 4rem 0;
+
+}
+
+.featured .title {
+  padding: 1rem 0;
+
+}
+
+.featured h1 {
+  border-bottom: 4px solid #ff385c;
+  display: inline; /* Keep the underline the length of the text */
+}
+
+.featured-wrapper { /* Creating variables for this one for practice purposes */
+  --gap: 1rem;
+  --num-cols: 5;
+  --row-height: 200px;
+
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+  
+}
+
+.featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured .main {
+  grid-column: span 3; /* places the first image across 3 columns */
+  grid-row: span 2; /* allows the image to take up 2 rows */
+}
+
+/* Featured END */
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+  padding: 1rem 0;
+}
+
+.footer  .left-menu, .right-menu {
+  display: flex;
+}
+
+.footer .left-menu li {
+  padding-right: 1rem;
+}
+
+.footer .right-menu li {
+  padding-left: 1rem;
+}
+
+/* chevron */
+.center {
+  display: flex;
+
+}
+
+.center a {
+  margin: auto;
+  font-size: 2rem;
+}
 
 @media screen and (max-width:940px) {
   .top-bar {
@@ -192,11 +311,33 @@ a {
     display: block;
   }
 
+  .listings {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 @media screen and (max-width: 680px) {
   /* Top Bar */
   .top-bar .intro, p {
     font-size: .8rem;
+  }
+
+  .listings {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .featured-wrapper {
+    --gap:1rem; /* changing existing variables */
+    --num-cols:2;
+  }
+
+  .featured .main {
+    grid-column: span 2;
+  
+  }
+
+  .footer .left-menu, .right-menu {
+    flex-direction: column;
   }
 }

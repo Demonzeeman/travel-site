@@ -13,7 +13,7 @@
   <div class="container">
    
     <!-- Top -->
-   	 <div class="top-bar">
+   	 <div id="top" class="top-bar">
     	  <h3 class="intro">Introducing the new MoarTravel</h3>
      	  <p>Learn More</p>
      </div>
@@ -35,9 +35,15 @@
 		</div>
 		<div class="menu">
 			<ul class="nav-menu">
-				<li><a href="" class="nav-link">Listings</a></li>
-				<li><a href="" class="nav-link">Featured</a></li>
-				<li><a href="" class="nav-link">Popular</a></li>
+				<li>
+					<a onclick="closeMenu()" href="#listings" class="nav-link">Listings</a>
+				</li>
+				<li>
+					<a onclick="closeMenu()" href="#featured" class="nav-link">Featured</a>
+				</li>
+				<li>
+					<a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+				</li>
 			</ul>
 			<div onclick="mobileMenu()" class="mobile"> <!-- each click runs function created in script below -->
 				<i class="fa-solid fa-bars"></i>
@@ -83,8 +89,256 @@
 
 
 	<!-- End Sort Bar -->
-  </div>
+	
+	<!-- Listings -->
+	
+	<div id="listings" class="listings">
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Goliaten</h4>
+					<p>4.5 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>800Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1518207186911-2393c88a99ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2NhbmRpbmF2aWElMjBob3VzZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Hemsedal</h4>
+					<p>4.7 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>750Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1600255940345-c0ddfd185a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2NhbmRpbmF2aWElMjBob3VzZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Hovden</h4>
+					<p>5.0 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>800Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1521730499317-be795d49114e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2NhbmRpbmF2aWElMjBob3VzZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Algard</h4>
+					<p>4.6 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>1100Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1559070169-a3077159ee16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Egersund</h4>
+					<p>4.8 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>700Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1603104143215-0e1f60e7c056?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Geilo</h4>
+					<p>4.5 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>840Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1610155180433-9994da6a323b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Kongsberg</h4>
+					<p>5.0 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>600Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1610155180095-107af77d6af2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Drammen</h4>
+					<p>4.7 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>690Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1525192290024-b8f7b2dc1fe8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Oslo</h4>
+					<p>5.0 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>890Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1522774802950-2702b6a83399?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Skien</h4>
+					<p>4.6 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>740Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1630832057884-966e56438ad4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHNjYW5kaW5hdmlhJTIwaG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Bryne</h4>
+					<p>4.5 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>650Kr per night</p>
+			</div>
+		</div>
+		<!-- Property Card -->
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1608669148396-42b31acf6120?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc0fHxzY2FuZGluYXZpYSUyMGhvdXNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="/">
+			
+			<div>
+				<div class="card-title">
+					<h4>Norway, Flekkefjord</h4>
+					<p>4.9 <i class="fa-solid fa-star"></i></p>
+				</div>
+				<p><span class="grey">Hosted by Fjord Reality</span></p>
+				<p><span class="grey">Dec 17 - 27</span></p>
+				<p>900Kr per night</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Listings End -->
 
+	<div id="featured" class="featured">
+		<div class="title">
+			<h1>Featured</h1>
+		</div>
+		<div class="featured-wrapper"> <!-- Setting 5 columns. 1 main img.  -->
+			<div class="main">
+				<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1593604340846-4fbe9763a8f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+		</div>
+	</div>
+
+	<div id="popular" class="featured">
+		<div class="title">
+			<h1>Popular</h1>
+		</div>
+		<div class="featured-wrapper"> <!-- Setting 5 columns. 1 main img.  -->
+			<div>
+				<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1593604340846-4fbe9763a8f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div class="main">
+				<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+			<div>
+				<img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="/">
+			</div>
+		</div>
+	</div>
+
+	<!-- Scroll to Top -->
+	<div class="center">
+		<a href="#top">
+			<i class="fa-solid fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<ul class="left-menu">
+			<li>AirTravel</li>
+			<li>Privacy</li>
+			<li>Terms</li>
+			<li>Destinations</li>
+		</ul>
+		<ul class="right-menu">
+			<li>Support</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+
+
+	<!-- END Footer -->
+	
+
+	<!-- Container End -->
+</div>
   <script>
 	const menuBtn = document.querySelector('.mobile');
       const navMenu = document.querySelector('.nav-menu');
@@ -93,7 +347,12 @@
         menuBtn.classList.toggle('active');
         navMenu.classList.toggle('active');
       };
-  </script>
 
+			const closeMenu = () => {
+        navMenu.classList.toggle('active');
+        
+      };
+  </script>
+<!-- 53.32 -->
 </body>
 </html>
